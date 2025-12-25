@@ -25,7 +25,8 @@ const ArticlesList: FC<ArticlesListProps> = memo(function ArticlesList({
     <List className={s.articles_list}>
       {articles?.map((art) => {
         const date = formatDate(art.published_at || "");
-        const text = cutText(art.summary || "");
+        const title = cutText(art.title || "", 50);
+        const text = cutText(art.summary || "", 100);
         return (
           <Paper variant="elevation" elevation={5} key={art.id}>
             <Box component={"li"} className={s.articles_list_item}>
@@ -47,7 +48,7 @@ const ArticlesList: FC<ArticlesListProps> = memo(function ArticlesList({
                 </Box>
                 <Box className={s.articles_list_card_description}>
                   <Typography className={s.articles_list_card_title}>
-                    {query ? highLightText(art.title, query) : art.title}
+                    {query ? highLightText(title, query) : title}
                   </Typography>
                   <Typography className={s.articles_list_card_summary}>
                     {query ? highLightText(text, query) : text}

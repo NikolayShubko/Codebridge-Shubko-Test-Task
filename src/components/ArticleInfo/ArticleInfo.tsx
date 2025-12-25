@@ -35,10 +35,12 @@ const ArticleInfo: FC<ArticleInfoProp> = ({ article, isLoading }) => {
           </Typography>
         </Box>
       </Paper>
-      <LinkStyled path={"/"}>
-        <img src={"/arrow-left.png"} alt="arrow-left" />
-        Back to homepage
-      </LinkStyled>
+      <Box className={s.link_holder}>
+        <LinkStyled path={"/"}>
+          <img src={"/arrow-left.png"} alt="arrow-left" />
+          Back to homepage
+        </LinkStyled>
+      </Box>
     </>
   );
 };
