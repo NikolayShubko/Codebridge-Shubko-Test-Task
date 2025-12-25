@@ -1,0 +1,32 @@
+@use "@styles/variables.scss";
+.article {
+  &_container {
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+
+  &_holder {
+    padding: 35px 75px 45px;
+    background-color: variables.$white;
+    border: 1px solid variables.$stroke;
+    border-radius: 5px;
+    max-height: 1001px;
+  }
+  &_image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 245px;
+    object-fit: cover;
+    z-index: -1;
+  }
+  &_title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+  }
+  &_summary {
+    font-size: 18px;
+  }
+}

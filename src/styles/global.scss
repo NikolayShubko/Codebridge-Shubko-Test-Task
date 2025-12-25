@@ -1,0 +1,16 @@
+@use "@styles/variables.scss";
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 75px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: variables.$montserrat-font;
+}
+
+:root {
+  --main-font-family: #{variables.$montserrat-font};
+  --primary-color: #{variables.$font-color};
+}
