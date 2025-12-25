@@ -1,4 +1,6 @@
 Shubko Mykola Test Task
+
+
 You need to build Single Page Application with React.
 
 The following Figma low-fidelity prototype should be used as a basis:
